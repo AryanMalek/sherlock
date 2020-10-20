@@ -61,22 +61,6 @@ required login before access.
     "username_unclaimed": "noonewouldeverusethis7"
   },
 ```
-
-## TikTok
-
-As of 2020-05-25, all usernames are reported as claimed.
-
-```
-  "TikTok": {
-    "errorType": "status_code",
-    "rank": 260,
-    "url": "https://www.tiktok.com/@{}",
-    "urlMain": "https://www.tiktok.com/",
-    "username_claimed": "red",
-    "username_unclaimed": "noonewouldeverusethis7"
-  },
-```
-
 ## ColourLovers
 
 As of 2020-05-24, all usernames are reported as claimed.
@@ -123,7 +107,6 @@ This can be detected, but it requires a different detection method.
 
 As of 2020-02-23, all usernames are reported as not existing.
 
-Why was this ever added?  It does not look like a social network.
 
 ```
   "Basecamp": {
@@ -938,5 +921,65 @@ As of 2020-08-24, Viadeo now returns false positives, which was found when runni
     "urlMain": "http://fr.viadeo.com/en/",
     "username_claimed": "franck.patissier",
     "username_unclaimed": "noonewouldeverusethis"
+  },
+```
+
+## MeetMe
+
+As of 2020-09-02, MeetMe returns false positives
+
+```
+  "MeetMe": {
+    "errorType": "response_url",
+    "errorUrl": "https://www.meetme.com/",
+    "url": "https://www.meetme.com/{}",
+    "urlMain": "https://www.meetme.com/",
+    "username_claimed": "blue",
+    "username_unclaimed": "noonewouldeverusethis7"
+  },
+```
+
+## Linkdedin
+
+As of 2020-09-23, Linkedin returns false positives because we are prompted with prompted to login when checking for a user
+
+```
+  "Linkedin": {
+    "errorMsg": "could not be found",
+    "errorType": "message",
+    "rank": 0,
+    "url": "https://www.linkedin.com/in/{}",
+    "urlMain": "https://www.linkedin.com/",
+    "username_claimed": "alex",
+    "username_unclaimed": "noonewouldeverusethis7"
+  },
+```
+
+## tracr.co
+As of 2020-09-23, tracr.co returns false positives because the site seems to be shut down.
+```
+  "tracr.co": {
+    "errorMsg": "No search results",
+    "errorType": "message",
+    "regexCheck": "^[A-Za-z0-9]{2,32}$",
+    "url": "https://tracr.co/users/1/{}",
+    "urlMain": "https://tracr.co/",
+    "username_claimed": "blue",
+    "username_unclaimed": "noonewouldeverusethis7"
+  }
+```
+
+## Taringa
+
+As of 2020-09-23, Taringa returns false positives.
+
+```
+  "Taringa": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*$",
+    "url": "https://www.taringa.net/{}",
+    "urlMain": "https://taringa.net/",
+    "username_claimed": "blue",
+    "username_unclaimed": "noonewouldeverusethis7"
   },
 ```
